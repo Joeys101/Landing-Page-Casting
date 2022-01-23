@@ -25,41 +25,70 @@ header {
 .menu h2, .logo {
     padding: 0.7rem;
 }
+.menu h2 {
+    background-color: 0,0,0,rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
 .menu h2:hover {
-    background-color: black;
+    cursor: pointer;
+    background-color:  rgb(0, 0, 0, 0.7);
 }
 .Whatsapp, .Facebook, .Instagram {
     max-height: 30px;
 }
+
 .title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding-right: 2rem;
     padding-top: 0.5rem;
     margin-top: 10%;
-    width: 38%;
     height: 2rem;
     color: floralwhite;
     background-color:rgba(0, 0, 0, 0.7);
     font-family:Arial, Helvetica, sans-serif;
 }
+.title h2 {
+    margin-right: 25%;
+}
+.arrow {
+    transition: 0.3s;
+    transform: rotate(180deg)translate(0,7rem);
+}
 
 .description {
     display: flex;
     justify-content: center;
-    height: 40%;
-    width: 38%;
     margin-top: 1%;
     font-size: 0.8rem;
     font-family:monospace;
     line-height: 85%;
-    padding: 1%;
-    padding-left: 1%;
+    padding: 3%;
+}
+.content {
+    cursor: default;
+    width: 38%;
+    height: 40%;
+    margin-top: 12%;
+    color: transparent;
+    transition: 0.5s;
+}
+.content:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
 }
 .youtube {
     max-height: 8rem;
-    padding-top: 4%;
-    padding-left: 13%;
+    margin-top: 2%;
+    margin-left: 13%;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;  
+}
+.youtube:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
 }
 .iconos {
     display: flex;
